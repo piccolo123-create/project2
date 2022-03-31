@@ -1,0 +1,81 @@
+.login {
+
+  width: 100%;
+  max-width: 40rem;
+  margin: 2rem auto;
+  padding: 2rem;
+
+  horiz-align: left;
+}
+
+.control {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.control label,
+.control input {
+  display: block;
+}
+
+.control label {
+  font-weight: bold;
+  flex: 1;
+  color: #464646;
+  margin-bottom: 0.5rem;
+}
+
+.control input {
+  flex: 3;
+  font: inherit;
+  padding: 0.35rem 0.35rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.control input:focus {
+  outline: none;
+  border-color: #4f005f;
+  background: #f6dbfc;
+}
+
+.control.invalid input {
+  border-color: green;
+  background: #fbdada;
+}
+
+.actions {
+  text-align: center;
+}
+
+.btn {
+  color: white;
+  left: 13.7%;
+  right: 13.7%;
+  top: 24.39%;
+  bottom: 24.39%;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+
+  /* identical to box height, or 131% */
+
+}
+
+label[for=email]
+{
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .control {
+    align-items: center;
+    flex-direction: row;
+  }
+
+}
